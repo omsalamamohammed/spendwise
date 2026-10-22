@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head><title>SpendWise</title>
+<style>
+body{font-family:Arial;background:#f0f4f8;display:flex;justify-content:center;align-items:center;height:100vh;margin:0}
+.card{background:white;padding:30px;border-radius:15px;box-shadow:0 4px 15px rgba(0,0,0,0.1);width:350px;text-align:center}
+input{width:90%;padding:10px;margin:10px 0;border-radius:8px;border:1px solid #ccc}
+button{background:#4f46e5;color:white;border:none;padding:12px 20px;border-radius:8px;cursor:pointer;width:100%;font-size:16px}
+#result{margin-top:20px;text-align:left;background:#f8f9ff;padding:15px;border-radius:10px;display:none}
+</style>
+</head>
+<body>
+<div class="card">
+<h2>💰 SpendWise</h2>
+<input type="number" id="budget" placeholder="Total Budget">
+<input type="number" id="expenses" placeholder="Total Expenses">
+<button onclick="checkBudget()">Calculate</button>
+<div id="result"></div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
